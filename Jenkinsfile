@@ -182,21 +182,21 @@ Build URL: ${BUILD_URL}
 
 Please check the Jenkins console log.
                 """,
-                to: "your-email@example.com"
+                to: "tanushirana875@gmail.com"
             )
 
             // Slack notification
-            slackSend(
-                channel: '#jenkins',
-                message: """
-Jenkins Git operation FAILED.
+//             slackSend(
+//                 channel: '#jenkins',
+//                 message: """
+// Jenkins Git operation FAILED.
 
-Job: ${JOB_NAME}
-Build: #${BUILD_NUMBER}
-Operation: ${OPERATION}
-Build URL: ${BUILD_URL}
-                """
-            )
+// Job: ${JOB_NAME}
+// Build: #${BUILD_NUMBER}
+// Operation: ${OPERATION}
+// Build URL: ${BUILD_URL}
+//                 """
+//             )
         }
     }
 }
